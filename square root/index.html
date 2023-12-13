@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-image: url("bg.jpg");
+    }
+
+    div {
+
+        margin-top: 4rem;
+        margin-left: 4rem;
+
+        height: 210px;
+        width: 340px;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 15px;
+        /* border: 3px solid black; */
+        border-bottom: 3px solid black;
+        border-top: 3px solid black;
+
+        /* width: 330px; */
+        background-color: transparent;
+        /* height: 400px; */
+
+    }
+
+    input {
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        margin-left: 1.6rem;
+        /* padding: 5rem; */
+        margin-bottom: 1.5rem;
+        outline: none;
+        border: none;
+        /* border-bottom: 2px solid black; */
+
+    }
+
+    button {
+        outline: none;
+        border: none;
+        margin-left: 1.3rem;
+        border-radius: 5px;
+        transition: 3.s ease-in-out;
+    }
+</style>
+
+<body>
+<div>
+    <h1> square root calculator</h1>
+    <table>
+        <tr>
+            <td> <input type="text" name="a" id="first" placeholder="Enter a number"> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="square()">Submit</button> </td>
+        </tr>
+    </table>
+    <label id="num"></label>
+</div>
+</body>
+
+<script type="text/javascript">
+    function square() {
+        var a, Square;
+        a = parseInt(document.getElementById("first").value);
+        //To find square root of a number using sqrt() function
+        Square = Math.sqrt(a);
+        document.getElementById("num").innerHTML = "Square Root of " + a + " is : " + Square;
+    }
+</script>
+
+</body>
+
+</html>
